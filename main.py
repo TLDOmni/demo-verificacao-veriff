@@ -43,7 +43,7 @@ def send_whatsapp_message(to_phone: str, message_text: str):
         "Accept": "application/json"
     }
     payload = {
-        "from": "447860099299", # Substitua pelo SEU número de remetente Infobip
+        "from": "557133433406", # Substitua pelo SEU número de remetente Infobip
         "to": to_phone,
         "content": {"text": message_text}
     }
@@ -131,3 +131,4 @@ async def receive_veriff_decision(request: Request):
     except Exception as e:
         print(f"Erro no webhook: {e}")
         return {"status": "error"}
+
